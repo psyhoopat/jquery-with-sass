@@ -7,6 +7,31 @@
     <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
+    <h1 class="title">JQuery</h1>
+    <button id="btn">Send</button>
+    <div id="post1"></div>
+    <div class="box"></div>
+    <!-- React App  -->
+    <div id="root"></div>
+
+    <!-- React CDN -->
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script> -->
+    <!-- <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script> -->
+
+    <script src="lib/react/react.production.min.js"></script>
+    <script src="lib/react/react-dom.production.min.js"></script>
+
+    <!-- JQuery  -->
+    <script src="lib/jquery/jquery-3.7.1.js"></script>
     <script src="script.js"></script>
+
+    <!-- Можно через CDN без сборки -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="src/App.jsx" type="text/babel"></script>
+    <script type="text/babel">
+        ReactDOM.render(<App />, document.getElementById("root"))
+    </script>
+
+    <!-- <script src="dist/index.js"></script> -->
 </body>
 </html>
